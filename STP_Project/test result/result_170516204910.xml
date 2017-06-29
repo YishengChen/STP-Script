@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuites hostname="fake_device_id" name="STP_Project" status="false"><testsuite errors="1" id="0" name="STP_Project" status="false" tests="1" time="0.000"><testcase assertions="0" name="Test.py" status="false" time="0.000"><error/></testcase></testsuite></testsuites>
