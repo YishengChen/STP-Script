@@ -7,13 +7,25 @@ from stp_lib.menu_tree.Runner import Runner
 from stp_lib.project import Project
 from com.samsung.stp.engine import DevicesManagerFactory
 # from stp_lib.node import *
+# "adb shell settings put system screen_off_timeout 30000"
+# "adb shell settings get system screen_off_timeout 30000"
+# "adb shell settings get global auto_time"
 
 
 
 dev = get_selected_device()
 
 
-node.scrollBottom(dev)
+# for i in range(5):
+#     dev.swipe(300, 300, 1000, 1000, 0)
+#     dev.sleep(1000)
+
+# dev.sendShellCommand("settings put system screen_off_timeout 60000")
+
+''' not working? '''
+# dev.setPhoneSetting("screen_off_timeout", "30000")
+
+# node.scrollBottom(dev)
 
 ''' 一直都是list not found错误 , 所有scroll相关的方法怎么用？'''
 # node.scrollBottom(dev)
@@ -41,10 +53,10 @@ node.scrollBottom(dev)
 # dev.setText(u"string中国") 
 
 ''' 未知两个命令的区别， 可以正常返回ping结果，公司wfif网络正常未知？ '''
-# print dev.sendShellCommand("ping -c 1 -w 5 www.baidu.com")
+# print dev.sendShellCommand("ping -c 1 -w 5 www.baidu.com") # 相当于以adb shell开头
 # print dev.shell("ping -c 3 -w 5 www.baidu.com")
 # 注意和shell的区别
-# dev.debugBridgeCommand(u"devices", 2000)
+# dev.debugBridgeCommand(u"devices", 2000) # 没有shell
 
 ''' MobileInsight, class node.Node(node, parent=None, level=0)[source] 用法'''
 
