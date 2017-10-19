@@ -15,12 +15,14 @@ from com.samsung.stp.engine import DevicesManagerFactory
 
 dev = get_selected_device()
 
+from stp_lib.node import *
+print scroll(u"人民币", 0, dev, ".*")
 
 # for i in range(5):
 #     dev.swipe(300, 300, 1000, 1000, 0)
 #     dev.sleep(1000)
 
-# dev.sendShellCommand("settings put system screen_off_timeout 60000")
+# dev.sendShellCommand("settings put system screen_off_timeout 600000")
 
 ''' not working? '''
 # dev.setPhoneSetting("screen_off_timeout", "30000")
